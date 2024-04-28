@@ -1,0 +1,14 @@
+.title{
+    font-size: larger;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__item{
+    flex-grow: 1;
+}
