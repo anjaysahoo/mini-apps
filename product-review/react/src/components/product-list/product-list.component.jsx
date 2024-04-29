@@ -1,6 +1,7 @@
 import classes from "./product-list.component.module.css"
 import PropTypes from 'prop-types';
 import {useEffect, useState} from "react";
+import {API_ENDPOINTS} from "../../config/app-constants.config.js";
 
 function ProductListComponent({updateActiveProduct}){
     const [productList, setProductList] = useState([]);
@@ -23,7 +24,7 @@ function ProductListComponent({updateActiveProduct}){
     async function fetchProductList() {
         setErrorLoadingProducts(false);
         try{
-            const response = await fetch("https://my-json-server.typicode.com/codebuds-fk/chat/chats");
+            const response = await fetch(API_ENDPOINTS.PRODUCTS);
             const data = await response.json();
             setProductList(data);
             setIsFetching(false);

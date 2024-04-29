@@ -3,8 +3,8 @@ import classes from "./review.component.module.css";
 import star from "../../assets/star.svg";
 import emptyStar from "../../assets/empty-star.svg";
 import {useEffect, useRef, useState} from "react";
+import {REVIEW} from "../../config/app-constants.config.js";
 
-const STAR_COUNT = 5;
 
 function ReviewComponent({activeProduct}) {
     const [isRatingSectionActive, setIsRatingSectionActive] = useState(true);
@@ -102,7 +102,7 @@ function ReviewComponent({activeProduct}) {
                                             src={star}
                                             alt="filled star"/>
                                     ))}
-                                    {Array(STAR_COUNT - filledStarCount).fill(null).map((_, index) => (
+                                    {Array(REVIEW.STAR_COUNT - filledStarCount).fill(null).map((_, index) => (
                                         <img
                                             onClick={() => updateFilledStarCount(index, false)}
                                             key={index}
@@ -166,7 +166,7 @@ function ReviewComponent({activeProduct}) {
                                         src={star}
                                         alt="filled star"/>
                                 ))}
-                                {Array(STAR_COUNT - filledStarCount).fill(null).map((_, index) => (
+                                {Array(REVIEW.STAR_COUNT - filledStarCount).fill(null).map((_, index) => (
                                     <img
                                         style={{cursor: "default"}}
                                         key={index}
