@@ -43,7 +43,7 @@ with the message “Review for product submitted successfully”
 loaded on clicking the product from the list
 3. Review text character count
 
-Points to consider:
+### Points to consider:
 - Focus on the modularity of code and design of the solution. Keep performance of the application in mind.
 - The solution could be coded in any view framework of your choice e.g. React, Vue, Angular etc or vanilla JS as well. Please refrain from using any plugins / libraries like Axios, jQuery or css frameworks like Tailwind, Bootstrap/Material UI. However, you can (and are encouraged to) use tooling such as webpack, grunt, gulp, etc.
 - The final solution should work without errors.
