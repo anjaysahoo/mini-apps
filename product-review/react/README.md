@@ -1,5 +1,10 @@
 ## Product Review 
 
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+
 To be coded in 2.5 hrs
 Implement a “Product Review” workflow for Flipkart. As part of this exercise, you will be provided with a set of products that can be assumed to be the users’ purchase history. You are expected to choose any of the products and initiate a product review process.
 
@@ -51,3 +56,33 @@ loaded on clicking the product from the list
 layout must be followed, it is also important for us to evaluate your CSS knowledge.
 - Do not create a div soup instead, use semantic HTML tags
 - Please ONLY use the assets provided in the mocks folder
+
+
+## API Response
+```json
+[
+      {
+        "id": 1,
+        "title": "Flipkart Support",
+        "imageURL": "https://rukminim1.flixcart.com/image/300/300/k0vbgy80pkrrdj/speaker/mobile-tablet-speaker/4/n/n/boat-stone-grenade-original-imafg96ffpnpgdv4.jpeg?q=90",
+        "orderId": "OD1234567890",
+        "latestMessageTimestamp": 1632205237669,
+        "messageList": [
+          {
+            "messageId": "msg1",
+            "message": "Hi, what can I help you with?",
+            "timestamp": 1632205137669,
+            "sender": "BOT",
+            "messageType": "text"
+          },
+          {
+            "messageId": "msg2",
+            "message": "Need help with this order",
+            "timestamp": 1632205237669,
+            "sender": "USER",
+            "messageType": "text"
+          }
+        ]
+      }
+]
+```
