@@ -1,0 +1,82 @@
+.messageBubble {
+  max-width: 70%;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.botMessage {
+  align-self: flex-start;
+}
+
+.userMessage {
+  align-self: flex-end;
+}
+
+.messageContent {
+  padding: 10px 12px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.botMessage .messageContent {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.userMessage .messageContent {
+  background-color: #3d7bf0;
+  color: white;
+}
+
+.messageText {
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.messageTime {
+  font-size: 11px;
+  margin-top: 4px;
+  text-align: right;
+  opacity: 0.8;
+}
+
+.optionButtons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.optionButton {
+  padding: 8px 15px;
+  border: 1px solid #2874f0;
+  background-color: transparent;
+  color: #2874f0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.botMessage .optionButton:hover:not(:disabled) {
+  background-color: #f0f8ff;
+}
+
+.optionButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabledOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  cursor: not-allowed;
+} 
