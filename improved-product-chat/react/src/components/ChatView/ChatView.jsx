@@ -121,7 +121,7 @@ const ChatView = ({ chat, onSendMessage, onRequestCall }) => {
               </div>
           ) : (
               messageGroups.map((group, groupIndex) => (
-                  <div key={group.timestamp}>
+                  <div className={styles.messageSection} key={group.timestamp}>
                     <DateSeparator date={formatDateLabel(group.timestamp)} />
                     {group.messages.map((message) => (
                         <MessageBubble
