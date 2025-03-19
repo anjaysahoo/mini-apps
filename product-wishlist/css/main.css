@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #c41e3a;
+    --secondary-color: #fff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --discount-color: #388e3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--text-color);
+    background: #f1f3f6;
+}
+
+.app {
+    max-width: 480px;
+    margin: 0 auto;
+    background: var(--secondary-color);
+    min-height: 100vh;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - 180px);
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Apply animations */
+.wishlist-modal {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.wishlist-modal__content {
+    animation: slideUp 0.3s ease-out;
+}
+
+.product {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Transitions */
+.product__wishlist-btn {
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.product__wishlist-btn:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.product__add-btn {
+    transition: opacity 0.2s;
+}
+
+.product__add-btn:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        height: calc(100vh - 140px);
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .categories {
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 8px;
+        gap: 16px;
+    }
+
+    .categories__btn {
+        min-width: 80px;
+    }
+
+    .product {
+        margin: 4px;
+    }
+} 

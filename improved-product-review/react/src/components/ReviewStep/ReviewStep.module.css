@@ -1,0 +1,61 @@
+.reviewStep {
+  text-align: left;
+}
+
+.selectedRating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.selectedRating p {
+  margin: 0 10px 0 0;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  font-size: 24px;
+  color: #e0e0e0;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.reviewInput {
+  margin-top: 20px;
+}
+
+.reviewInput label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.reviewInput textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.reviewInput textarea:focus {
+  outline: none;
+  border-color: #2874f0;
+}
+
+.characterCount {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.characterCount .error {
+  color: #d32f2f;
+} 

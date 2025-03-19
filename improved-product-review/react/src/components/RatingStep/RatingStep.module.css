@@ -1,0 +1,32 @@
+.ratingStep {
+  text-align: center;
+}
+
+.ratingInstructions {
+  margin-bottom: 20px;
+  color: #757575;
+}
+
+.ratingStars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.star {
+  font-size: 40px;
+  cursor: pointer;
+  color: #e0e0e0;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.filled {
+  color: #ffc107;
+}
+
+.ratingText {
+  font-size: 16px;
+  margin-top: 20px;
+} 

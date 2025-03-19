@@ -1,0 +1,118 @@
+.productReview {
+  flex: 0.6;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.productImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.productDetails {
+  flex: 1;
+}
+
+.productDetails h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.productDetails p {
+  margin: 0;
+  color: #757575;
+}
+
+.reviewSteps {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #757575;
+  font-weight: bold;
+}
+
+.step.active {
+  background-color: #2874f0;
+  color: white;
+}
+
+.connector {
+  height: 2px;
+  flex: 0 0 50px;
+  background-color: #f0f0f0;
+  margin: 0 10px;
+}
+
+.stepContent {
+  margin-bottom: 30px;
+  min-height: 200px;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.buttonPrimary {
+  background-color: #2874f0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttonPrimary:hover {
+  background-color: #1a5cbd;
+}
+
+.buttonSecondary {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttonSecondary:hover {
+  background-color: #e0e0e0;
+} 
